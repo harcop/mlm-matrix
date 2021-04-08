@@ -1,0 +1,17 @@
+TRUNCATE `users`;
+TRUNCATE `user_contact`;
+TRUNCATE `user_kin`;
+TRUNCATE `withdraw_fund`;
+TRUNCATE `bank_detail`;
+TRUNCATE `fund_transfer`;
+TRUNCATE `admin_info`;
+TRUNCATE `new_user_notification`;
+TRUNCATE `transaction`;
+TRUNCATE `tree1`;
+TRUNCATE `tree2`;
+TRUNCATE `tree3`;
+INSERT INTO `users` (`id`, `user_email`, `level`, `total_left`, `total_right`, `username`, `f_name`, `l_name`, `password`, `earnings`, `bonus`, `spent`, `withdraw`, `transfer_in`, `transfer_out`, `d_downline`, `pin`, `referral`, `phone`, `dob`, `gender`) VALUES (NULL, 'dil', '99', '0', '0', 'admin', 'dil', 'dil', '12345', '0', '0', '0', '0', '0', '0', '0', '12345', '', '', '', '');
+INSERT INTO `tree1` (`id`, `username`, `left_user`, `right_user`, `father`, `g_father`, `left_count`, `right_count`) VALUES (NULL, 'admin', NULL, NULL, 'f_admin', 'g_admin', '0', '0');
+INSERT INTO `tree2` (`id`, `username`, `left_user`, `right_user`, `father`, `g_father`, `ancestor`, `left_count`, `right_count`) VALUES (NULL, 'admin', '', '', 'f_admin', 'g_admin', 'a_admin', '0', '0');
+INSERT INTO `tree3` (`id`, `username`, `left_user`, `right_user`, `father`, `g_father`, `ancestor`, `left_count`, `right_count`) VALUES (NULL, 'admin', '', '', 'f_admin', 'g_admin', 'a_admin', '0', '0');
+INSERT INTO `admin_info` () VALUES ();
